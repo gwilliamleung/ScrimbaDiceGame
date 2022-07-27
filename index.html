@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="message">Player 1 Turn</h1>
+            <div class="players">
+                <div id="player1">
+                    <h1>Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div class="diceContainer active">
+                        <div class="top">
+                            <div id="p1dice1" class="dice dice1">-</div>
+                            <div id="p1dice2" class="dice dice2">-</div>
+                        </div>
+                        <div id="p1dice3" class="dice  dice3">-</div>
+                    </div>
+                </div>
+                <div id="player2">
+                    <h1>Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div class="diceContainer">
+                        <div class="top">
+                            <div id="p2dice1" class="dice dice1">-</div>
+                            <div id="p2dice2" class="dice dice2">-</div>
+                        </div>
+                        <div id="p2dice3" class="dice dice3">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
