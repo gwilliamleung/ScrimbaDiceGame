@@ -41,6 +41,10 @@ rollBtn.addEventListener("click", function() {
             player1Scoreboard.innerHTML = player1Dice1.innerHTML
             player1Turn = !player1Turn
         }
+        if (player1Dice1.innerHTML === player1Dice2 === player1Dice3.innerHTML){
+            player1Scoreboard.innerHTML = player1Dice1.innerHTML
+            message.textContent = "Player 1 Won"
+        }
         message.textContent = "Player 2 Turn"
 
     } else {
@@ -56,6 +60,10 @@ rollBtn.addEventListener("click", function() {
             if (player1Scoreboard.innerHTML < player2Scoreboard.innerHTML ){
                 message.textContent = "Player 2 Won 🎉"
                 showResetButton()
+            }
+            if (player2Dice1.innerHTML === player2Dice2 === player2Dice3.innerHTML){
+                player2Scoreboard.innerHTML = player1Dice1.innerHTML
+                message.textContent = "Player 2 Won"
             }
             if (player1Scoreboard.innerHTML === player2Scoreboard.innerHTML ){
                 message.textContent = "*Its a tie!"
